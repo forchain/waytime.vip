@@ -28,17 +28,20 @@ A modern, responsive website for Guangzhou Tushiguang Tickets Co., Ltd (Waytime)
 ## 🛠️ Installation & Setup
 
 1. **Clone the repository**
+
    ```bash
    git clone <repository-url>
    cd waytime.vip
    ```
 
 2. **Install dependencies**
+
    ```bash
    pnpm install
    ```
 
 3. **Start development server**
+
    ```bash
    pnpm dev
    ```
@@ -76,15 +79,18 @@ waytime.vip/
 ## 🎨 Design System
 
 ### Colors
+
 - **Primary**: Blue gradient (#0ea5e9 to #0369a1)
 - **Gold**: Luxury accent (#f59e0b to #d97706)
 - **Luxury**: Neutral grays (#f8fafc to #0f172a)
 
 ### Typography
+
 - **Headings**: Playfair Display (serif)
 - **Body**: Inter (sans-serif)
 
 ### Components
+
 - Custom button styles with hover effects
 - Card components with shadows and animations
 - Responsive grid layouts
@@ -93,6 +99,7 @@ waytime.vip/
 ## 🌐 Internationalization
 
 The website supports automatic language detection:
+
 - **Chinese (zh)**: For users in Chinese-speaking regions
 - **English (en)**: Default for all other regions
 
@@ -101,23 +108,27 @@ Language switching is available in the header navigation.
 ## 📱 Pages
 
 ### Homepage (`/`)
+
 - Hero section with compelling value proposition
 - Services overview with interactive cards
 - About preview section
 - Call-to-action sections
 
 ### Services (`/services`)
+
 - Detailed service descriptions
 - Feature highlights for each service
 - Interactive elements and animations
 
 ### About (`/about`)
+
 - Company story and mission
 - Core values and principles
 - Company information and statistics
 - Trust-building content
 
 ### Contact (`/contact`)
+
 - Contact information with clickable actions
 - Interactive contact form
 - FAQ section
@@ -126,16 +137,19 @@ Language switching is available in the header navigation.
 ## 🚀 Deployment
 
 ### Build for Production
+
 ```bash
 pnpm build
 ```
 
 ### Preview Production Build
+
 ```bash
 pnpm preview
 ```
 
 ### Static Site Deployment
+
 The project is configured for static site deployment with the `@sveltejs/adapter-static` adapter.
 
 ## 🔧 Development Scripts

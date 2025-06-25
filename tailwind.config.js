@@ -51,7 +51,7 @@ export default {
 			animation: {
 				'fade-in': 'fadeIn 0.5s ease-in-out',
 				'slide-up': 'slideUp 0.5s ease-out',
-				'float': 'float 6s ease-in-out infinite'
+				float: 'float 6s ease-in-out infinite'
 			},
 			keyframes: {
 				fadeIn: {
@@ -70,4 +70,4 @@ export default {
 		}
 	},
 	plugins: []
-}; 
+};
