@@ -198,3 +198,55 @@ This project is proprietary software for Guangzhou Tushiguang Tickets Co., Ltd.
 ---
 
 Built with ❤️ using modern web technologies for an exceptional luxury travel experience.
+
+## ☁️ Vercel 部署指南 | Deploy to Vercel
+
+### 中文说明
+
+1. **注册/登录 Vercel**
+   - 访问 [vercel.com](https://vercel.com/) 注册或登录账号。
+
+2. **导入项目**
+   - 点击 "New Project"，选择你的 GitHub/GitLab/Bitbucket 账号，导入本仓库。
+
+3. **配置项目**
+   - Framework Preset 选择 `SvelteKit`。
+   - Build Command 保持默认（`pnpm build`）。
+   - Output Directory 保持默认（`.svelte-kit/output`，Vercel 会自动识别静态导出）。
+   - Root Directory 选择项目根目录（即包含 `package.json` 的目录）。
+   - 如有自定义环境变量，可在 "Environment Variables" 添加。
+
+4. **部署**
+   - 点击 "Deploy"，等待构建和部署完成。
+   - 部署成功后可通过 Vercel 提供的预览域名访问。
+
+5. **自定义域名（可选）**
+   - 在 Vercel 项目设置中添加自定义域名（如 `waytime.vip`），并按提示配置 DNS。
+
+6. **静态站点说明**
+   - 本项目已配置 `@sveltejs/adapter-static`，适合 Vercel 静态托管。
+
+### English Instructions
+
+1. **Sign up / Log in to Vercel**
+   - Go to [vercel.com](https://vercel.com/) and sign up or log in.
+
+2. **Import Project**
+   - Click "New Project", select your GitHub/GitLab/Bitbucket account, and import this repository.
+
+3. **Configure Project**
+   - Set Framework Preset to `SvelteKit`.
+   - Keep Build Command as default (`pnpm build`).
+   - Output Directory: leave as default (`.svelte-kit/output`, Vercel will auto-detect static export).
+   - Root Directory: select the project root (where `package.json` is located).
+   - If you have custom environment variables, add them in "Environment Variables".
+
+4. **Deploy**
+   - Click "Deploy" and wait for the build and deployment to finish.
+   - After deployment, you can access your site via the Vercel preview domain.
+
+5. **Custom Domain (Optional)**
+   - Add your custom domain (e.g., `waytime.vip`) in Vercel project settings and follow the DNS instructions.
+
+6. **Static Site Note**
+   - This project uses `@sveltejs/adapter-static` and is suitable for Vercel static hosting.

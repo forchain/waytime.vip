@@ -63,7 +63,7 @@
 			{$t.contact.title}
 		</h1>
 		<p class="text-xl md:text-2xl text-luxury-600 max-w-4xl mx-auto leading-relaxed">
-			Get in touch with our luxury travel experts to start planning your extraordinary journey.
+			{$t.contact.subtitle}
 		</p>
 	</div>
 </section>
@@ -74,10 +74,9 @@
 		<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
 			<!-- Contact Information -->
 			<div>
-				<h2 class="text-3xl font-serif font-bold mb-8 text-luxury-900">Get in Touch</h2>
+				<h2 class="text-3xl font-serif font-bold mb-8 text-luxury-900">{$t.contact.getInTouch}</h2>
 				<p class="text-lg text-luxury-600 mb-8 leading-relaxed">
-					Our team of luxury travel specialists is ready to help you create unforgettable experiences. 
-					Contact us today to discuss your travel dreams.
+					{$t.contact.getInTouchDesc}
 				</p>
 
 				<div class="space-y-6">
@@ -95,9 +94,9 @@
 						<a
 							href="tel:+8613284444493"
 							class="btn-primary"
-							aria-label="Call us"
+							aria-label="{$t.contact.callNow}"
 						>
-							Call Now
+							{$t.contact.callNow}
 						</a>
 					</div>
 
@@ -115,9 +114,9 @@
 						<a
 							href="mailto:yolo20230214@gmail.com"
 							class="btn-secondary"
-							aria-label="Send email"
+							aria-label="{$t.contact.sendEmail}"
 						>
-							Send Email
+							{$t.contact.sendEmail}
 						</a>
 					</div>
 
@@ -143,9 +142,9 @@
 							</svg>
 						</div>
 						<div class="flex-1">
-							<h3 class="text-lg font-semibold text-luxury-900 mb-1">Business Hours</h3>
-							<p class="text-luxury-600">Monday - Friday: 9:00 AM - 6:00 PM</p>
-							<p class="text-luxury-600">Saturday: 10:00 AM - 4:00 PM</p>
+							<h3 class="text-lg font-semibold text-luxury-900 mb-1">{$t.contact.businessHours}</h3>
+							<p class="text-luxury-600">{$t.contact.businessHoursMonFri}</p>
+							<p class="text-luxury-600">{$t.contact.businessHoursSat}</p>
 						</div>
 					</div>
 				</div>
@@ -154,88 +153,91 @@
 			<!-- Contact Form -->
 			<div>
 				<div class="bg-gradient-to-br from-primary-500 to-gold-600 rounded-2xl p-8 text-white">
-					<h2 class="text-3xl font-serif font-bold mb-6">Send us a Message</h2>
+					<h2 class="text-3xl font-serif font-bold mb-6">{$t.contact.sendMessage}</h2>
 					<p class="text-lg mb-8 opacity-90">
-						Tell us about your travel dreams and we'll help make them a reality.
+						{$t.contact.sendMessageDesc}
 					</p>
 
 					{#if submitMessage}
 						<div class="bg-green-500/20 border border-green-400 rounded-lg p-4 mb-6">
-							<p class="text-green-100">{submitMessage}</p>
+							<p class="text-green-100">
+								{submitMessage === 'Thank you for your message! We will get back to you soon.' ? $t.contact.submitSuccess : submitMessage === 'Sorry, there was an error sending your message. Please try again.' ? $t.contact.submitError : submitMessage}
+							</p>
 						</div>
 					{/if}
 
 					<form on:submit={handleSubmit} class="space-y-6">
 						<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 							<div>
-								<label for="name" class="block text-sm font-medium mb-2">Full Name *</label>
+								<label for="name" class="block text-sm font-medium mb-2">{$t.contact.fullName} *</label>
 								<input
 									type="text"
 									id="name"
 									bind:value={formData.name}
 									required
 									class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent"
-									placeholder="Your full name"
+									placeholder="{$t.contact.fullNamePlaceholder}"
 								/>
 							</div>
 							<div>
-								<label for="email" class="block text-sm font-medium mb-2">Email Address *</label>
+								<label for="email" class="block text-sm font-medium mb-2">{$t.contact.emailAddress} *</label>
 								<input
 									type="email"
 									id="email"
 									bind:value={formData.email}
 									required
 									class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent"
-									placeholder="your.email@example.com"
+									placeholder="{$t.contact.emailAddressPlaceholder}"
 								/>
 							</div>
 						</div>
 
 						<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 							<div>
-								<label for="phone" class="block text-sm font-medium mb-2">Phone Number</label>
+								<label for="phone" class="block text-sm font-medium mb-2">{$t.contact.phoneNumber}</label>
 								<input
 									type="tel"
 									id="phone"
 									bind:value={formData.phone}
 									class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent"
-									placeholder="+1 (555) 123-4567"
+									placeholder="{$t.contact.phoneNumberPlaceholder}"
 								/>
 							</div>
 							<div>
-								<label for="service" class="block text-sm font-medium mb-2">Service Interest</label>
+								<label for="service" class="block text-sm font-medium mb-2">{$t.contact.serviceInterest}</label>
 								<select
 									id="service"
 									bind:value={formData.service}
 									class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent"
 								>
-									<option value="">Select a service</option>
-									{#each serviceOptions as option}
-										<option value={option.value}>{option.label}</option>
-									{/each}
+									<option value="">{$t.contact.serviceInterestPlaceholder}</option>
+									<option value="custom-tours">{$t.services.customTours.title}</option>
+									<option value="luxury-hotels">{$t.services.luxuryHotels.title}</option>
+									<option value="premium-flights">{$t.services.premiumFlights.title}</option>
+									<option value="private-jets">{$t.services.privateJets.title}</option>
+									<option value="other">{$t.contact.otherService}</option>
 								</select>
 							</div>
 						</div>
 
 						<div>
-							<label for="message" class="block text-sm font-medium mb-2">Message *</label>
+							<label for="message" class="block text-sm font-medium mb-2">{$t.contact.message} *</label>
 							<textarea
 								id="message"
 								bind:value={formData.message}
 								required
 								rows="5"
 								class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent resize-none"
-								placeholder="Tell us about your travel plans, preferences, and any specific requirements..."
+								placeholder="{$t.contact.messagePlaceholder}"
 							></textarea>
 						</div>
 
 						<button
 							type="submit"
+							class="btn-luxury w-full mt-2"
 							disabled={isSubmitting}
-							class="w-full btn-secondary border-white text-white hover:bg-white hover:text-primary-600 disabled:opacity-50 disabled:cursor-not-allowed"
-							aria-label="Send message"
 						>
-							{isSubmitting ? 'Sending...' : 'Send Message'}
+							{isSubmitting ? $t.contact.submitting : $t.contact.submit}
 						</button>
 					</form>
 				</div>
@@ -249,45 +251,20 @@
 	<div class="container-custom">
 		<div class="text-center mb-16">
 			<h2 class="text-4xl md:text-5xl font-serif font-bold mb-6 text-luxury-900">
-				Frequently Asked Questions
+				{$t.contact.faqTitle}
 			</h2>
 			<p class="text-xl text-luxury-600 max-w-3xl mx-auto">
-				Find answers to common questions about our luxury travel services.
+				{$t.contact.faqDesc}
 			</p>
 		</div>
 
 		<div class="max-w-4xl mx-auto space-y-6">
-			<div class="card p-8">
-				<h3 class="text-xl font-serif font-semibold mb-4 text-luxury-900">How far in advance should I book my luxury travel?</h3>
-				<p class="text-luxury-600 leading-relaxed">
-					We recommend booking at least 3-6 months in advance for luxury travel experiences, especially during peak seasons. 
-					For private jet charters and exclusive experiences, 6-12 months notice is ideal to ensure availability.
-				</p>
-			</div>
-
-			<div class="card p-8">
-				<h3 class="text-xl font-serif font-semibold mb-4 text-luxury-900">Do you offer 24/7 support during travel?</h3>
-				<p class="text-luxury-600 leading-relaxed">
-					Yes, we provide round-the-clock support for all our clients. Our dedicated team is available 24/7 to assist with 
-					any questions, changes, or emergencies during your journey.
-				</p>
-			</div>
-
-			<div class="card p-8">
-				<h3 class="text-xl font-serif font-semibold mb-4 text-luxury-900">Can you arrange custom experiences not listed on your website?</h3>
-				<p class="text-luxury-600 leading-relaxed">
-					Absolutely! We specialize in creating completely customized experiences. Our extensive network of partners and 
-					insider knowledge allows us to arrange unique experiences tailored to your specific interests and preferences.
-				</p>
-			</div>
-
-			<div class="card p-8">
-				<h3 class="text-xl font-serif font-semibold mb-4 text-luxury-900">What payment methods do you accept?</h3>
-				<p class="text-luxury-600 leading-relaxed">
-					We accept various payment methods including bank transfers, major credit cards, and secure online payments. 
-					For high-value bookings, we also accommodate alternative payment arrangements.
-				</p>
-			</div>
+			{#each $t.contact.faq as item}
+				<div class="card p-8">
+					<h3 class="text-xl font-serif font-semibold mb-4 text-luxury-900">{item.q}</h3>
+					<p class="text-luxury-600 leading-relaxed">{item.a}</p>
+				</div>
+			{/each}
 		</div>
 	</div>
 </section> 

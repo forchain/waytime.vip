@@ -31,29 +31,25 @@
 		<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 			<div>
 				<h2 class="text-4xl font-serif font-bold mb-6 text-luxury-900">
-					Our Story
+					{$t.about.storyTitle}
 				</h2>
 				<p class="text-lg text-luxury-600 mb-6 leading-relaxed">
-					Founded with a vision to transform luxury travel, {$t.hero.title} has established itself as a premier travel service provider, 
-					catering to discerning clients who demand excellence in every aspect of their journey.
+					{$t.about.story1}
 				</p>
 				<p class="text-lg text-luxury-600 mb-6 leading-relaxed">
-					Our commitment to personalized service, attention to detail, and unwavering dedication to client satisfaction 
-					has made us the trusted choice for luxury travelers worldwide.
+					{$t.about.story2}
 				</p>
 				<p class="text-lg text-luxury-600 leading-relaxed">
-					From our headquarters in Guangzhou, we serve clients globally, bringing world-class travel experiences 
-					to those who appreciate the finest things in life.
+					{$t.about.story3}
 				</p>
 			</div>
 			<div>
 				<div class="bg-gradient-to-br from-primary-500 to-gold-600 rounded-2xl p-8 text-white">
 					<div class="text-center">
 						<div class="text-6xl mb-4">🌟</div>
-						<h3 class="text-2xl font-serif font-semibold mb-4">Excellence in Every Journey</h3>
+						<h3 class="text-2xl font-serif font-semibold mb-4">{$t.about.excellenceTitle}</h3>
 						<p class="text-lg leading-relaxed">
-							We believe that every journey should be extraordinary, every experience should be memorable, 
-							and every detail should be perfect.
+							{$t.about.excellenceDesc}
 						</p>
 					</div>
 				</div>
@@ -67,10 +63,10 @@
 	<div class="container-custom">
 		<div class="text-center mb-16">
 			<h2 class="text-4xl md:text-5xl font-serif font-bold mb-6 text-luxury-900">
-				Our Mission & Values
+				{$t.about.missionTitle}
 			</h2>
 			<p class="text-xl text-luxury-600 max-w-3xl mx-auto">
-				Guided by our core values, we strive to deliver exceptional travel experiences that exceed expectations.
+				{$t.about.missionDesc}
 			</p>
 		</div>
 
@@ -82,9 +78,9 @@
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
 					</svg>
 				</div>
-				<h3 class="text-xl font-serif font-semibold mb-4 text-luxury-900">Professionalism</h3>
+				<h3 class="text-xl font-serif font-semibold mb-4 text-luxury-900">{$t.about.professionalismTitle}</h3>
 				<p class="text-luxury-600 leading-relaxed">
-					Maintaining the highest standards of professional service and ethical business practices in all our interactions.
+					{$t.about.professionalismDesc}
 				</p>
 			</div>
 
@@ -96,9 +92,9 @@
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
 					</svg>
 				</div>
-				<h3 class="text-xl font-serif font-semibold mb-4 text-luxury-900">Attention to Detail</h3>
+				<h3 class="text-xl font-serif font-semibold mb-4 text-luxury-900">{$t.about.detailTitle}</h3>
 				<p class="text-luxury-600 leading-relaxed">
-					Ensuring every aspect of your journey is meticulously planned and executed to perfection.
+					{$t.about.detailDesc}
 				</p>
 			</div>
 
@@ -109,9 +105,9 @@
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
 					</svg>
 				</div>
-				<h3 class="text-xl font-serif font-semibold mb-4 text-luxury-900">Unparalleled Service</h3>
+				<h3 class="text-xl font-serif font-semibold mb-4 text-luxury-900">{$t.about.serviceTitle}</h3>
 				<p class="text-luxury-600 leading-relaxed">
-					Providing exceptional customer service that goes beyond expectations to create lasting relationships.
+					{$t.about.serviceDesc}
 				</p>
 			</div>
 		</div>
@@ -123,10 +119,10 @@
 	<div class="container-custom">
 		<div class="text-center mb-16">
 			<h2 class="text-4xl md:text-5xl font-serif font-bold mb-6 text-luxury-900">
-				Company Information
+				{$t.about.companyInfoTitle}
 			</h2>
 			<p class="text-xl text-luxury-600 max-w-3xl mx-auto">
-				Established and licensed travel service provider committed to excellence.
+				{$t.about.companyInfoDesc}
 			</p>
 		</div>
 
@@ -134,30 +130,30 @@
 			<!-- Company Details -->
 			<div class="space-y-6">
 				<div class="bg-luxury-50 rounded-xl p-6">
-					<h3 class="text-xl font-serif font-semibold mb-4 text-luxury-900">Company Details</h3>
+					<h3 class="text-xl font-serif font-semibold mb-4 text-luxury-900">{$t.about.companyDetailsTitle}</h3>
 					<div class="space-y-3 text-luxury-700">
 						<div class="flex items-start space-x-3">
 							<div class="w-2 h-2 bg-primary-600 rounded-full mt-2"></div>
 							<div>
-								<span class="font-medium">Chinese Name:</span> {$t.about.companyName}
+								<span class="font-medium">{$t.about.chineseName}:</span> {$t.about.companyName}
 							</div>
 						</div>
 						<div class="flex items-start space-x-3">
 							<div class="w-2 h-2 bg-primary-600 rounded-full mt-2"></div>
 							<div>
-								<span class="font-medium">English Name:</span> {$t.hero.title}
+								<span class="font-medium">{$t.about.englishName}:</span> {$t.hero.title}
 							</div>
 						</div>
 						<div class="flex items-start space-x-3">
 							<div class="w-2 h-2 bg-primary-600 rounded-full mt-2"></div>
 							<div>
-								<span class="font-medium">Business License:</span> {$t.about.license}
+								<span class="font-medium">{$t.about.businessLicense}:</span> {$t.about.license}
 							</div>
 						</div>
 						<div class="flex items-start space-x-3">
 							<div class="w-2 h-2 bg-primary-600 rounded-full mt-2"></div>
 							<div>
-								<span class="font-medium">Representative:</span> {$t.about.representative}
+								<span class="font-medium">{$t.about.representativeLabel}:</span> {$t.about.representative}
 							</div>
 						</div>
 					</div>
@@ -167,7 +163,7 @@
 			<!-- Address -->
 			<div>
 				<div class="bg-gradient-to-br from-primary-500 to-gold-600 rounded-xl p-8 text-white h-full">
-					<h3 class="text-2xl font-serif font-semibold mb-6">Office Address</h3>
+					<h3 class="text-2xl font-serif font-semibold mb-6">{$t.about.officeAddressTitle}</h3>
 					<div class="space-y-4">
 						<div class="flex items-start space-x-3">
 							<svg class="w-6 h-6 text-white mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -188,10 +184,10 @@
 	<div class="container-custom">
 		<div class="text-center mb-16">
 			<h2 class="text-4xl md:text-5xl font-serif font-bold mb-6 text-luxury-900">
-				Why Choose {$t.hero.title}?
+				{$t.about.whyChooseTitle}
 			</h2>
 			<p class="text-xl text-luxury-600 max-w-3xl mx-auto">
-				Experience the difference that comes with choosing a dedicated luxury travel partner.
+				{$t.about.whyChooseDesc}
 			</p>
 		</div>
 
@@ -200,32 +196,32 @@
 				<div class="w-20 h-20 bg-gradient-to-br from-primary-500 to-primary-600 rounded-full flex items-center justify-center mx-auto mb-6">
 					<span class="text-3xl font-bold text-white">15+</span>
 				</div>
-				<h3 class="text-xl font-serif font-semibold mb-3 text-luxury-900">Years Experience</h3>
-				<p class="text-luxury-600">Decades of expertise in luxury travel planning and execution.</p>
+				<h3 class="text-xl font-serif font-semibold mb-3 text-luxury-900">{$t.about.yearsExperience}</h3>
+				<p class="text-luxury-600">{$t.about.yearsExperienceDesc}</p>
 			</div>
 
 			<div class="text-center">
 				<div class="w-20 h-20 bg-gradient-to-br from-gold-500 to-gold-600 rounded-full flex items-center justify-center mx-auto mb-6">
 					<span class="text-3xl font-bold text-white">1000+</span>
 				</div>
-				<h3 class="text-xl font-serif font-semibold mb-3 text-luxury-900">Happy Clients</h3>
-				<p class="text-luxury-600">Satisfied customers who trust us with their luxury travel needs.</p>
+				<h3 class="text-xl font-serif font-semibold mb-3 text-luxury-900">{$t.about.happyClients}</h3>
+				<p class="text-luxury-600">{$t.about.happyClientsDesc}</p>
 			</div>
 
 			<div class="text-center">
 				<div class="w-20 h-20 bg-gradient-to-br from-primary-500 to-primary-600 rounded-full flex items-center justify-center mx-auto mb-6">
 					<span class="text-3xl font-bold text-white">50+</span>
 				</div>
-				<h3 class="text-xl font-serif font-semibold mb-3 text-luxury-900">Countries</h3>
-				<p class="text-luxury-600">Global network covering destinations worldwide.</p>
+				<h3 class="text-xl font-serif font-semibold mb-3 text-luxury-900">{$t.about.countries}</h3>
+				<p class="text-luxury-600">{$t.about.countriesDesc}</p>
 			</div>
 
 			<div class="text-center">
 				<div class="w-20 h-20 bg-gradient-to-br from-gold-500 to-gold-600 rounded-full flex items-center justify-center mx-auto mb-6">
 					<span class="text-3xl font-bold text-white">24/7</span>
 				</div>
-				<h3 class="text-xl font-serif font-semibold mb-3 text-luxury-900">Support</h3>
-				<p class="text-luxury-600">Round-the-clock assistance for all your travel needs.</p>
+				<h3 class="text-xl font-serif font-semibold mb-3 text-luxury-900">{$t.about.support}</h3>
+				<p class="text-luxury-600">{$t.about.supportDesc}</p>
 			</div>
 		</div>
 	</div>
@@ -235,10 +231,10 @@
 <section class="section-padding bg-luxury-900 text-white">
 	<div class="container-custom text-center">
 		<h2 class="text-4xl md:text-5xl font-serif font-bold mb-6">
-			Ready to Start Your Journey?
+			{$t.about.ctaTitle}
 		</h2>
 		<p class="text-xl text-luxury-300 mb-8 max-w-3xl mx-auto">
-			Let us help you create the perfect luxury travel experience tailored to your preferences and desires.
+			{$t.about.ctaDesc}
 		</p>
 		<button
 			on:click={handleContactUs}

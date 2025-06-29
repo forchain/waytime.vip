@@ -181,10 +181,9 @@
 			<div class="relative">
 				<div class="bg-gradient-to-br from-primary-500 to-gold-600 rounded-2xl p-8 text-white text-center">
 					<div class="text-6xl mb-4">🌟</div>
-					<h3 class="text-2xl font-serif font-semibold mb-4">Excellence in Every Journey</h3>
+					<h3 class="text-2xl font-serif font-semibold mb-4">{$t.about.excellenceTitle}</h3>
 					<p class="text-lg leading-relaxed">
-						We believe that every journey should be extraordinary, every experience should be memorable, 
-						and every detail should be perfect.
+						{$t.about.excellenceDesc}
 					</p>
 				</div>
 			</div>

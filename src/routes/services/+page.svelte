@@ -45,8 +45,8 @@
 								<div class="w-2 h-2 bg-primary-600 rounded-full"></div>
 							</div>
 							<div>
-								<h3 class="font-semibold text-luxury-900 mb-2">Personalized Itineraries</h3>
-								<p class="text-luxury-600">Tailored travel plans that reflect your unique interests, preferences, and travel style.</p>
+								<h3 class="font-semibold text-luxury-900 mb-2">{$t.services.customTours.details.personalizedItineraries}</h3>
+								<p class="text-luxury-600">{$t.services.customTours.details.personalizedItinerariesDesc}</p>
 							</div>
 						</div>
 						<div class="flex items-start space-x-4">
@@ -54,8 +54,8 @@
 								<div class="w-2 h-2 bg-primary-600 rounded-full"></div>
 							</div>
 							<div>
-								<h3 class="font-semibold text-luxury-900 mb-2">Cultural Immersion</h3>
-								<p class="text-luxury-600">Authentic experiences that connect you with local cultures, traditions, and communities.</p>
+								<h3 class="font-semibold text-luxury-900 mb-2">{$t.services.customTours.details.culturalImmersion}</h3>
+								<p class="text-luxury-600">{$t.services.customTours.details.culturalImmersionDesc}</p>
 							</div>
 						</div>
 						<div class="flex items-start space-x-4">
@@ -63,8 +63,8 @@
 								<div class="w-2 h-2 bg-primary-600 rounded-full"></div>
 							</div>
 							<div>
-								<h3 class="font-semibold text-luxury-900 mb-2">Exclusive Activities</h3>
-								<p class="text-luxury-600">Access to unique experiences and activities not available to regular tourists.</p>
+								<h3 class="font-semibold text-luxury-900 mb-2">{$t.services.customTours.details.exclusiveActivities}</h3>
+								<p class="text-luxury-600">{$t.services.customTours.details.exclusiveActivitiesDesc}</p>
 							</div>
 						</div>
 					</div>
@@ -73,7 +73,7 @@
 					<div class="bg-gradient-to-br from-luxury-50 to-primary-50 rounded-2xl p-8 h-96 flex items-center justify-center">
 						<div class="text-center">
 							<div class="text-6xl mb-4">🗺️</div>
-							<p class="text-luxury-600 font-medium">Custom Travel Experiences</p>
+							<p class="text-luxury-600 font-medium">{$t.services.customTours.card}</p>
 						</div>
 					</div>
 				</div>
@@ -85,7 +85,7 @@
 					<div class="bg-gradient-to-br from-luxury-50 to-primary-50 rounded-2xl p-8 h-96 flex items-center justify-center">
 						<div class="text-center">
 							<div class="text-6xl mb-4">🏨</div>
-							<p class="text-luxury-600 font-medium">Luxury Accommodations</p>
+							<p class="text-luxury-600 font-medium">{$t.services.luxuryHotels.card}</p>
 						</div>
 					</div>
 				</div>
@@ -103,8 +103,8 @@
 								<div class="w-2 h-2 bg-gold-600 rounded-full"></div>
 							</div>
 							<div>
-								<h3 class="font-semibold text-luxury-900 mb-2">Premium Properties</h3>
-								<p class="text-luxury-600">Access to the world's most prestigious hotels, resorts, and boutique properties.</p>
+								<h3 class="font-semibold text-luxury-900 mb-2">{$t.services.luxuryHotels.details.premiumProperties}</h3>
+								<p class="text-luxury-600">{$t.services.luxuryHotels.details.premiumPropertiesDesc}</p>
 							</div>
 						</div>
 						<div class="flex items-start space-x-4">
@@ -112,8 +112,8 @@
 								<div class="w-2 h-2 bg-gold-600 rounded-full"></div>
 							</div>
 							<div>
-								<h3 class="font-semibold text-luxury-900 mb-2">Exclusive Benefits</h3>
-								<p class="text-luxury-600">Special rates, room upgrades, and VIP amenities through our partnerships.</p>
+								<h3 class="font-semibold text-luxury-900 mb-2">{$t.services.luxuryHotels.details.exclusiveBenefits}</h3>
+								<p class="text-luxury-600">{$t.services.luxuryHotels.details.exclusiveBenefitsDesc}</p>
 							</div>
 						</div>
 						<div class="flex items-start space-x-4">
@@ -121,8 +121,8 @@
 								<div class="w-2 h-2 bg-gold-600 rounded-full"></div>
 							</div>
 							<div>
-								<h3 class="font-semibold text-luxury-900 mb-2">Seamless Booking</h3>
-								<p class="text-luxury-600">Hassle-free reservations with personalized service and 24/7 support.</p>
+								<h3 class="font-semibold text-luxury-900 mb-2">{$t.services.luxuryHotels.details.seamlessBooking}</h3>
+								<p class="text-luxury-600">{$t.services.luxuryHotels.details.seamlessBookingDesc}</p>
 							</div>
 						</div>
 					</div>
@@ -145,8 +145,8 @@
 								<div class="w-2 h-2 bg-primary-600 rounded-full"></div>
 							</div>
 							<div>
-								<h3 class="font-semibold text-luxury-900 mb-2">Business & First Class</h3>
-								<p class="text-luxury-600">Premium seating on major airlines with the best comfort and service.</p>
+								<h3 class="font-semibold text-luxury-900 mb-2">{$t.services.premiumFlights.details.businessFirstClass}</h3>
+								<p class="text-luxury-600">{$t.services.premiumFlights.details.businessFirstClassDesc}</p>
 							</div>
 						</div>
 						<div class="flex items-start space-x-4">
@@ -154,8 +154,8 @@
 								<div class="w-2 h-2 bg-primary-600 rounded-full"></div>
 							</div>
 							<div>
-								<h3 class="font-semibold text-luxury-900 mb-2">Personalized Service</h3>
-								<p class="text-luxury-600">Customized in-flight experiences tailored to your preferences.</p>
+								<h3 class="font-semibold text-luxury-900 mb-2">{$t.services.premiumFlights.details.personalizedService}</h3>
+								<p class="text-luxury-600">{$t.services.premiumFlights.details.personalizedServiceDesc}</p>
 							</div>
 						</div>
 						<div class="flex items-start space-x-4">
@@ -163,8 +163,8 @@
 								<div class="w-2 h-2 bg-primary-600 rounded-full"></div>
 							</div>
 							<div>
-								<h3 class="font-semibold text-luxury-900 mb-2">Priority Handling</h3>
-								<p class="text-luxury-600">Fast-track security, priority boarding, and exclusive lounge access.</p>
+								<h3 class="font-semibold text-luxury-900 mb-2">{$t.services.premiumFlights.details.priorityHandling}</h3>
+								<p class="text-luxury-600">{$t.services.premiumFlights.details.priorityHandlingDesc}</p>
 							</div>
 						</div>
 					</div>
@@ -173,7 +173,7 @@
 					<div class="bg-gradient-to-br from-luxury-50 to-primary-50 rounded-2xl p-8 h-96 flex items-center justify-center">
 						<div class="text-center">
 							<div class="text-6xl mb-4">✈️</div>
-							<p class="text-luxury-600 font-medium">Premium Air Travel</p>
+							<p class="text-luxury-600 font-medium">{$t.services.premiumFlights.card}</p>
 						</div>
 					</div>
 				</div>
@@ -185,7 +185,7 @@
 					<div class="bg-gradient-to-br from-luxury-50 to-primary-50 rounded-2xl p-8 h-96 flex items-center justify-center">
 						<div class="text-center">
 							<div class="text-6xl mb-4">🛩️</div>
-							<p class="text-luxury-600 font-medium">Private Aviation</p>
+							<p class="text-luxury-600 font-medium">{$t.services.privateJets.card}</p>
 						</div>
 					</div>
 				</div>
@@ -203,8 +203,8 @@
 								<div class="w-2 h-2 bg-gold-600 rounded-full"></div>
 							</div>
 							<div>
-								<h3 class="font-semibold text-luxury-900 mb-2">Flexible Scheduling</h3>
-								<p class="text-luxury-600">Departure times that suit your schedule, not the airline's.</p>
+								<h3 class="font-semibold text-luxury-900 mb-2">{$t.services.privateJets.details.privateAviation}</h3>
+								<p class="text-luxury-600">{$t.services.privateJets.details.privateAviationDesc}</p>
 							</div>
 						</div>
 						<div class="flex items-start space-x-4">
@@ -212,8 +212,8 @@
 								<div class="w-2 h-2 bg-gold-600 rounded-full"></div>
 							</div>
 							<div>
-								<h3 class="font-semibold text-luxury-900 mb-2">Complete Privacy</h3>
-								<p class="text-luxury-600">Exclusive use of the aircraft with complete confidentiality.</p>
+								<h3 class="font-semibold text-luxury-900 mb-2">{$t.services.privateJets.details.bespokeJourneys}</h3>
+								<p class="text-luxury-600">{$t.services.privateJets.details.bespokeJourneysDesc}</p>
 							</div>
 						</div>
 						<div class="flex items-start space-x-4">
@@ -221,8 +221,8 @@
 								<div class="w-2 h-2 bg-gold-600 rounded-full"></div>
 							</div>
 							<div>
-								<h3 class="font-semibold text-luxury-900 mb-2">Custom Solutions</h3>
-								<p class="text-luxury-600">Tailored travel solutions for both short and long-haul journeys.</p>
+								<h3 class="font-semibold text-luxury-900 mb-2">{$t.services.privateJets.details.vipSupport}</h3>
+								<p class="text-luxury-600">{$t.services.privateJets.details.vipSupportDesc}</p>
 							</div>
 						</div>
 					</div>

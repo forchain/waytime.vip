@@ -43,9 +43,7 @@
 			<div class="flex items-center justify-between h-16 md:h-20">
 				<!-- Logo -->
 				<div class="flex items-center space-x-2">
-					<div class="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-primary-600 to-gold-600 rounded-lg flex items-center justify-center">
-						<span class="text-white font-bold text-sm md:text-base">W</span>
-					</div>
+					<img src="/images/logo.jpg" alt="Waytime Logo" class="w-8 h-8 md:w-10 md:h-10 rounded-lg object-cover" />
 					<span class="text-xl md:text-2xl font-serif font-semibold gradient-text">
 						{$t.hero.title}
 					</span>
